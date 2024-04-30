@@ -3,6 +3,6 @@
 Este é o meu portfólio, criado usando React com Vite como bundler e Tailwind CSS para estilização.
 
 
-:us: # My Portfolio with React + Vite and Tailwind CSS
+:us: # My portfolio with React + Vite and Tailwind CSS
 
 This is my portfolio, created using React with Vite as the bundler and Tailwind CSS for styling.
