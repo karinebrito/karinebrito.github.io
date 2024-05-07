@@ -1,4 +1,3 @@
-import React from 'react'
 import Nav from './src/components/nav.tsx'
 import Hero from './src/components/hero.tsx'
 import Experience from './src/components/experience.tsx'
