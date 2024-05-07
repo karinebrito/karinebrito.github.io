@@ -36,6 +36,7 @@ const Nav = () => {
             <div className='xs:hidden md:hidden lg:block space-x-2'>
               <a href='#' onClick={() => scrollToSection('about-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Sobre</a>
               <a href='#' onClick={() => scrollToSection('experience-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Experiência</a>
+              <a href='#' onClick={() => scrollToSection('contact-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Contato</a>
               <a onClick={openResumePdf} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Resumo</a>
             </div>
             <div className='xs:block md:block lg:hidden'>
@@ -56,6 +57,9 @@ const Nav = () => {
               </a>
               <a href='#' onClick={() => scrollToSection('experience-section')}>
                 <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Experiência</li>
+              </a>
+              <a href='#' onClick={() => scrollToSection('contact-section')}>
+                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Contato</li>
               </a>
               <a onClick={openResumePdf}>
                 <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Resumo</li>

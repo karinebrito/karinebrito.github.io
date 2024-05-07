@@ -1,6 +1,8 @@
 import Nav from './nav'
 import Hero from './hero'
 import Experience from './experience'
+import Contact from './contact'
+import Footer from './footer'
 
 const Main = () => {
   return (
@@ -8,6 +10,8 @@ const Main = () => {
       <Nav />
       <Hero />
       <Experience />
+      <Contact />
+      <Footer />
     </div>
   )
 }
