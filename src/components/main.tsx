@@ -1,13 +1,13 @@
 import Nav from './nav'
 import Hero from './hero'
-import Footer from './footer'
+import Experience from './experience'
 
 const Main = () => {
   return (
-    <div className="bg-black">
+    <div className='bg-black'>
       <Nav />
       <Hero />
-      <Footer />
+      <Experience />
     </div>
   )
 }

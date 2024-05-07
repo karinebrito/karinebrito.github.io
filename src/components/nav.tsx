@@ -1,38 +1,44 @@
 import { BsCodeSlash } from 'react-icons/bs'
 import { AiOutlineClose } from 'react-icons/ai'
+import ResumePdf from '../../assets/resume.pdf'
 import { HiMenuAlt1 } from 'react-icons/hi'
 import { useState } from 'react'
 
 const Nav = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false)
 
   function toggleMenu(isOpen: boolean) {
     if (isOpen !== toggle) {
-      setToggle(isOpen);
+      setToggle(isOpen)
     }
   }
 
-  function scrollToSection() {
-    const section = document.getElementById('about-section');
+  function scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId)
+  
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' })
     }
+  }
+
+  const openResumePdf = () => {
+    window.open(ResumePdf, '_blank')
   }
 
   return (
     <>
-      <div className='text-white font-roboto'>
+      <div className='font-roboto text-white'>
         <div className='flex items-center justify-between p-10 lg:flex-row'>
           <div>
             <BsCodeSlash size={26} className='text-white'/>
           </div>
           <div className='space-x-4 text-3x1'>
-            <div className='xs:hidden ssm:hidden lg:block space-x-2'>
-              <a href="#" onClick={scrollToSection} className="hover:text-cyan-500 rounded-md px-3 py-2 text-x1 cursor-pointer">Sobre</a>
-              <a href="#" className="hover:text-cyan-500 rounded-md px-3 py-2 text-x1 cursor-pointer">Experiência</a>
-              <a href="#" className="hover:text-cyan-500 rounded-md px-3 py-2 text-x1 cursor-pointer">Resumo</a>
+            <div className='xs:hidden md:hidden lg:block space-x-2'>
+              <a href='#' onClick={() => scrollToSection('about-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Sobre</a>
+              <a href='#' onClick={() => scrollToSection('experience-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Experiência</a>
+              <a onClick={openResumePdf} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Resumo</a>
             </div>
-            <div className='xs:block ssm:block lg:hidden'>
+            <div className='xs:block md:block lg:hidden'>
               {toggle ? (
                 <AiOutlineClose onClick={() => toggleMenu(false)} size={26} className='text-cyan-500 cursor-pointer'/>
               ) : (
@@ -41,13 +47,19 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <div className='xs:block ssm:block lg:hidden'>
+        <div className='xs:block md:block lg:hidden'>
           {toggle ? (
             <div className='flex p-10'>
               <ul className='ml-auto'>
-                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Sobre</li>
+              <a href='#' onClick={() => scrollToSection('about-section')}>
+               <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Sobre</li>
+              </a>
+              <a href='#' onClick={() => scrollToSection('experience-section')}>
                 <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Experiência</li>
+              </a>
+              <a onClick={openResumePdf}>
                 <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Resumo</li>
+              </a>
               </ul>
             </div>
           ) : (
@@ -56,9 +68,8 @@ const Nav = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-  
-  export default Nav
+export default Nav
   

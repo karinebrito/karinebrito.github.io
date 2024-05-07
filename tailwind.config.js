@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],  theme: {
     fontFamily: {
-      'sans': ['Roboto', 'ui-sans-serif', 'system-ui']
+      'sans': ['JetBrains Mono', 'monospace']
     },
     screens: {
       xs: '320px',
