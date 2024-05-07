@@ -19,7 +19,7 @@ const Contact = () => {
             <FaHandPointDown size={40}/>
         </div>
         <div className='text-white mt-10 cursor-pointer'>
-            <BsEnvelopeAt size={40} className='hover:text-cyan-500 hover:scale-105 transition-transform duration-200 ease-in-out' onClick={openEmail}/>
+            <BsEnvelopeAt size={80} className='hover:text-cyan-500 hover:scale-105 transition-transform duration-200 ease-in-out' onClick={openEmail}/>
         </div>
     </section>
   )

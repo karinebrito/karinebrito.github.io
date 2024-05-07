@@ -1,11 +1,19 @@
 import { BsCodeSlash } from 'react-icons/bs'
 import { AiOutlineClose } from 'react-icons/ai'
-import ResumePdf from '../../assets/resume.pdf'
 import { HiMenuAlt1 } from 'react-icons/hi'
+import ResumePdf from '../../assets/resume.pdf'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Nav = () => {
+  const { i18n } = useTranslation()
   const [toggle, setToggle] = useState(false)
+
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language)
+    console.log("Current language:", i18n.language)
+    console.log("Changing language to:", language)
+  }
 
   function toggleMenu(isOpen: boolean) {
     if (isOpen !== toggle) {
@@ -31,6 +39,10 @@ const Nav = () => {
         <div className='flex items-center justify-between p-10 lg:flex-row'>
           <div>
             <BsCodeSlash size={26} className='text-white'/>
+          </div>
+          <div>
+            <button onClick={() => changeLanguage('pt')} className='mr-8'>Português</button>
+            <button onClick={() => changeLanguage('en')}>Inglês</button>
           </div>
           <div className='space-x-4 text-3x1'>
             <div className='xs:hidden md:hidden lg:block space-x-2'>

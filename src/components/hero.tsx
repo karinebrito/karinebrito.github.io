@@ -1,7 +1,10 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import HeroPic from '../../assets/photokb.jpeg'
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className='flex justify-center items-start p-10 lg:p-20 lg:min-h-screen'>
@@ -29,21 +32,19 @@ const Hero = () => {
       </section>
 
       <section id='about-section' className='p-10 lg:p-20 lg:pl-64 lg:min-h-screen'>
-        <div className='border-b border-gray-700 w-1/2 mb-8'></div>
+        <div className='border-b border-gray-700 w-5/6 mb-8'></div>
         <h1 className='text-4xl xs:text-2xl text-white lg:mr-4 mb-8'>Sobre mim</h1>
         <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-8'>
           <div className='lg:col-span-2 text-slate-300'>
             <p>
-              Olá! Meu nome é Karine, sou formada em Análise e Desenvolvimento de Sistemas e eu gosto de desenvolver o design de interfaces. 
-              O meu interesse pelo desenvolvimento de software começou em 2020, quando decidi compreender o funcionamento por trás dos sites e assim 
-              descobrir que posso tornar mais intuitiva a experiência de outras pessoas.
+              {t('hello')}
             </p>
             <p className='mt-8'>
-              Tive o privilégio de trabalhar inicialmente em uma <a href='https://tripmee.com.br/' target='blank'className='text-cyan-500 hover:underline transition duration-300'>startup</a> onde dei meus primeiros passos na área de tecnologia
+              Tive o privilégio de trabalhar inicialmente em uma <a href='https://tripmee.com.br/' target='_blank'className='text-cyan-500 hover:underline transition duration-300'>startup</a> onde dei meus primeiros passos na área de tecnologia
               e pude conhecer o mercado de trabalho. 
             </p>
             <p className='mt-8'>
-              Logo depois, trabalhei em uma <a href='https://equals.com.br/' target='blank' className='text-cyan-500 hover:underline transition duration-300'>empresa de gestão e conciliação financeira</a> onde tive a oportunidade de melhorar as minhas softskills e hardskills. 
+              Logo depois, trabalhei em uma <a href='https://equals.com.br/' target='_blank' className='text-cyan-500 hover:underline transition duration-300'>empresa de gestão e conciliação financeira</a> onde tive a oportunidade de melhorar as minhas softskills e hardskills. 
             </p>
             <p className='mt-8'>
               Atualmente o meu foco principal é estudar para desenvolver produtos mais acessíveis e inclusivos.
@@ -51,8 +52,8 @@ const Hero = () => {
           </div>     
           <div className='lg:col-span-2 md:col-span-1'>
             <div className='relative'>
-              <div className={`absolute inset-0 bg-cyan-900 opacity-75 lg:w-1/2 md:w-2/4 xs:mx-auto lg:m-0 ${'hover:hidden'}`}></div>
-              <img src={HeroPic} alt='Foto da Karine' className='lg:w-1/2 md:w-2/4 xs:w-fit xs:mx-auto lg:m-0 hover:scale-105 transition-transform duration-200 ease-in-out'/>
+              <div className={`absolute inset-0 bg-cyan-900 opacity-75 lg:w-1/2 md:w-2/4 xs:mx-auto lg:m-0 rounded-md ${'hover:hidden'}`}></div>
+              <img src={HeroPic} alt='Foto da Karine' className='lg:w-1/2 md:w-2/4 xs:w-fit xs:mx-auto lg:m-0 hover:scale-105 transition-transform duration-200 ease-in-out rounded-md'/>
             </div>
           </div>
         </div>
