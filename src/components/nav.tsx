@@ -6,13 +6,11 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Nav = () => {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [toggle, setToggle] = useState(false)
 
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language)
-    console.log("Current language:", i18n.language)
-    console.log("Changing language to:", language)
   }
 
   function toggleMenu(isOpen: boolean) {
@@ -41,15 +39,15 @@ const Nav = () => {
             <BsCodeSlash size={26} className='text-white'/>
           </div>
           <div>
-            <button onClick={() => changeLanguage('pt')} className='mr-8'>Português</button>
-            <button onClick={() => changeLanguage('en')}>Inglês</button>
+            <button onClick={() => changeLanguage('pt')} className='mr-8'>{t('portugues')}</button>
+            <button onClick={() => changeLanguage('en')}>{t('english')}</button>
           </div>
           <div className='space-x-4 text-3x1'>
             <div className='xs:hidden md:hidden lg:block space-x-2'>
-              <a href='#' onClick={() => scrollToSection('about-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Sobre</a>
-              <a href='#' onClick={() => scrollToSection('experience-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Experiência</a>
-              <a href='#' onClick={() => scrollToSection('contact-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Contato</a>
-              <a onClick={openResumePdf} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>Resumo</a>
+              <a href='#' onClick={() => scrollToSection('about-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.about')}</a>
+              <a href='#' onClick={() => scrollToSection('experience-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.experience')}</a>
+              <a href='#' onClick={() => scrollToSection('contact-section')} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.contact')}</a>
+              <a onClick={openResumePdf} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.resume')}</a>
             </div>
             <div className='xs:block md:block lg:hidden'>
               {toggle ? (
@@ -65,16 +63,16 @@ const Nav = () => {
             <div className='flex p-10'>
               <ul className='ml-auto'>
               <a href='#' onClick={() => scrollToSection('about-section')}>
-               <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Sobre</li>
+               <li className='hover:text-cyan-500 text-white text-x1 mb-2'>{t('nav.about')}</li>
               </a>
               <a href='#' onClick={() => scrollToSection('experience-section')}>
-                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Experiência</li>
+                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>{t('nav.experience')}</li>
               </a>
               <a href='#' onClick={() => scrollToSection('contact-section')}>
-                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Contato</li>
+                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>{t('nav.contact')}</li>
               </a>
               <a onClick={openResumePdf}>
-                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>Resumo</li>
+                <li className='hover:text-cyan-500 text-white text-x1 mb-2'>{t('nav.resume')}</li>
               </a>
               </ul>
             </div>

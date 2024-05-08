@@ -1,3 +1,39 @@
 {
-    "hello": "Olá! Meu nome é Karine, sou formada em Análise e Desenvolvimento de Sistemas e gosto de desenvolver o design de interfaces. O meu interesse pelo desenvolvimento de software começou em 2020, quando decidi compreender o funcionamento por trás dos sites e assim descobrir que posso tornar mais intuitiva a experiência de outras pessoas."
-}
+    "nav": {
+        "about": "Sobre",
+        "experience": "Experiência",
+        "contact": "Contato",
+        "resume": "Resumo"
+    },
+    "hero": {
+        "hi_my_name": "Olá, meu nome é",
+        "name": "Karine Brito",
+        "description_resume": "Sou uma desenvolvedora front-end focada construção de interfaces digitais de alta qualidade.",
+        "description_complete": "Olá! Meu nome é Karine, sou formada em Análise e Desenvolvimento de Sistemas e gosto de desenvolver o design de interfaces. O meu interesse pelo desenvolvimento de software começou em 2020, quando decidi compreender o funcionamento por trás dos sites e assim descobrir que posso tornar mais intuitiva a experiência de outras pessoas.",
+        "about": "Sobre mim",
+        "startup_1": "Tive o privilégio de trabalhar inicialmente em uma",
+        "startup_2": " startup ",
+        "startup_3": "onde dei meus primeiros passos na área de tecnologia e pude conhecer o mercado de trabalho.",
+        "company_1": "Logo depois, trabalhei em uma",
+        "company_2": "empresa de gestão e conciliação financeira",
+        "company_3": "onde tive a oportunidade de melhorar as minhas softskills e hardskills.",
+        "focus": "Atualmente o meu foco principal é estudar para desenvolver produtos mais acessíveis e inclusivos."
+    },
+    "experience": {
+        "exxperience": "Experiência",
+        "developer_equals": "Desenvolvedora Front-end | Equals - Gestão Financeira Inteligente",
+        "description_equals": "Responsável pela manutenção e a migração de tecnologia de uma plataforma web de conciliação de vendas com cartão de crédito, débito, boleto e outros meios de pagamento online, com o intuito de fornecer um acesso prático e intuitivo ao usuário.",
+        "developer_weetravel": "Desenvolvedora Front-end | WeeTravel",
+        "description_weetravel": "Responsável pela criação e a manutenção de uma plataforma web de agências de viagens, com o intuito de oferecer uma melhor gestão de controle interno para as agências e automatizar o dia a dia dos agentes."
+    },
+    "contact": {
+        "contact_me": "Entre em contato comigo",
+        "doubt": "Caso tenha alguma dúvida ou apenas queira dizer oi, farei o possível para entrar em contato com você!"
+    },
+    "footer": {
+        "design": "Design feito por Karine Brito"
+    },
+    "portugues": "Português",
+    "english": "Inglês"
+}   
+

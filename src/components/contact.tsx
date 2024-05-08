@@ -1,7 +1,9 @@
 import { BsEnvelopeAt } from 'react-icons/bs'
 import { FaHandPointDown } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+    const { t } = useTranslation()
 
     const openEmail = () => {
     window.location.href = 'mailto:annakarinebrito@gmail.com'
@@ -9,10 +11,10 @@ const Contact = () => {
 
   return (
     <section id='contact-section' className='flex flex-col justify-center items-center p-10 lg:p-20 lg:min-h-screen'>
-        <h2 className='text-6xl md:text-4xl xs:text-xl text-white mb-4 mx-4'>Entre em contato</h2>
+        <h2 className='text-6xl md:text-4xl xs:text-xl text-white mb-4 mx-4'>{t('contact.contact_me')}</h2>
         <div className='mt-20 xs:mt-8'>
             <p className='text-slate-300'>
-                Caso tenha alguma dúvida ou apenas queira dizer oi, farei o possível para entrar em contato com você!
+            {t('contact.doubt')}
             </p>
         </div>
         <div className='text-white mt-20 xs:mt-8'>

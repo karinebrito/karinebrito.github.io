@@ -10,14 +10,14 @@ const Hero = () => {
       <section className='flex justify-center items-start p-10 lg:p-20 lg:min-h-screen'>
         <div className='lg:w-1/2 md:w-full xs:w-full'>
             <div>
-              <h1 className='text-3xl md:text-2xl xs:text-xl text-cyan-500'>Olá, meu nome é</h1>
+              <h1 className='text-3xl md:text-2xl xs:text-xl text-cyan-500'>{t('hero.hi_my_name')}</h1>
             </div>
             <div>
-              <h2 className='mt-10 text-8xl md:text-6xl xs:text-4xl text-white'>Karine Brito.</h2>
+              <h2 className='mt-10 text-8xl md:text-6xl xs:text-4xl text-white'>{t('hero.name')}</h2>
             </div>
             <div>
               <h3 className='mt-10 text-xl text-slate-300'>
-                Sou uma desenvolvedora front-end com experiência na construção de interfaces digitais de alta qualidade e focada em desenvolver telas interativas e acessíveis.
+              {t('hero.description_resume')}
               </h3>
             </div>
             <div className='flex mt-10 space-x-4 text-white cursor-pointer'>
@@ -33,21 +33,24 @@ const Hero = () => {
 
       <section id='about-section' className='p-10 lg:p-20 lg:pl-64 lg:min-h-screen'>
         <div className='border-b border-gray-700 w-5/6 mb-8'></div>
-        <h1 className='text-4xl xs:text-2xl text-white lg:mr-4 mb-8'>Sobre mim</h1>
+        <h1 className='text-4xl xs:text-2xl text-white lg:mr-4 mb-8'>{t('hero.about')}</h1>
         <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-8'>
           <div className='lg:col-span-2 text-slate-300'>
             <p>
-              {t('hello')}
+              {t('hero.description_complete')}
             </p>
             <p className='mt-8'>
-              Tive o privilégio de trabalhar inicialmente em uma <a href='https://tripmee.com.br/' target='_blank'className='text-cyan-500 hover:underline transition duration-300'>startup</a> onde dei meus primeiros passos na área de tecnologia
-              e pude conhecer o mercado de trabalho. 
+              {t('hero.startup_1')}{' '}
+              <a href='https://tripmee.com.br/' target='_blank' className='text-cyan-500 hover:underline transition duration-300'>{t('hero.startup_2')}</a>{' '}
+              {t('hero.startup_3')}
             </p>
             <p className='mt-8'>
-              Logo depois, trabalhei em uma <a href='https://equals.com.br/' target='_blank' className='text-cyan-500 hover:underline transition duration-300'>empresa de gestão e conciliação financeira</a> onde tive a oportunidade de melhorar as minhas softskills e hardskills. 
+              {t('hero.company_1')}{' '}
+              <a href='https://equals.com.br/' target='_blank' className='text-cyan-500 hover:underline transition duration-300'>{t('hero.company_2')}</a>{' '}
+              {t('hero.company_3')}
             </p>
             <p className='mt-8'>
-              Atualmente o meu foco principal é estudar para desenvolver produtos mais acessíveis e inclusivos.
+              {t('hero.focus')}
             </p>
           </div>     
           <div className='lg:col-span-2 md:col-span-1'>

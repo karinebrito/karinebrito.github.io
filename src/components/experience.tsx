@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next'
 
 const Experience = () => {
+  const { t } = useTranslation()
+
   return (
     <section id='experience-section' className='p-10 lg:p-20 lg:pl-64 lg:min-h-screen'>
       <div className='border-b border-gray-700 w-5/6 mb-8'></div>
-      <h1 className='text-4xl xs:text-2xl text-white'>Experiência</h1>
+      <h1 className='text-4xl xs:text-2xl text-white'>{t('experience.experience')}</h1>
       <ol className='mt-8 grid lg:w-2/3 md:1/2'>
         <a href='https://equals.com.br/' target='_blank'>
           <li className='rounded-md hover:bg-gray-900 transition-colors w-full p-4 flex flex-col md:flex-row'>
@@ -14,11 +17,10 @@ const Experience = () => {
             </div>
             <div className='flex-grow grid grid-rows-1'>
               <h3 className='text-white'>
-                Desenvolvedora Front-end | Equals - Gestão Financeira Inteligente
+                {t('experience.developer_equals')}
               </h3>
               <p className='mt-4 text-slate-300'>
-                Responsável pela manutenção e a migração de tecnologia de uma plataforma web de conciliação de vendas com cartão de crédito, 
-                débito, boleto e outros meios de pagamento online, com o intuito de fornecer um acesso prático e intuitivo ao usuário.
+                 {t('experience.description_equals')}
               </p>
               <ul className='mt-2 flex flex-wrap' aria-label='Tecnologias utilizadas'>
                 <li className='mr-2 mt-2'>
@@ -69,11 +71,10 @@ const Experience = () => {
             </div>
             <div className='flex-grow grid grid-rows-1'>
               <h3 className='text-white'>
-                Desenvolvedora Front-end | WeeTravel
+                {t('experience.developer_weetravel')}
               </h3>
               <p className='mt-8 text-slate-300'>
-                Responsável pela criação e a manutenção de uma plataforma web de agências de viagens, com o intuito de oferecer uma melhor 
-                gestão de controle interno para as agências e automatizar o dia a dia dos agentes.
+                {t('experience.description_equals')}
               </p>
               <ul className='mt-2 flex flex-wrap' aria-label='Tecnologias utilizadas'>
                 <li className='mr-2 mt-2'>

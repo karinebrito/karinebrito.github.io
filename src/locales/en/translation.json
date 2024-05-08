@@ -1,3 +1,39 @@
 {
-    "hello": "Hello! My name is Karine, I have a degree in Systems Analysis and Development, and I enjoy designing interfaces. My interest in software development began in 2020 when I decided to understand the workings behind websites and thus discovered that I can make other people's experiences more intuitive."
+    "nav": {
+        "about": "About",
+        "experience": "Experience",
+        "contact": "Contact",
+        "resume": "Resume"
+    },
+    "hero": {
+        "hi_my_name": "Hi, my name is",
+        "name": "Karine Brito",
+        "description_resume": "I'm a front-end developer focused on building high-quality digital interfaces.",
+        "description_complete": "Hello! My name is Karine, I have a degree in Systems Analysis and Development, and I enjoy designing interfaces. My interest in software development began in 2020 when I decided to understand the workings behind websites and thus discovered that I can make other people's experiences more intuitive.",
+        "about": "About me",
+        "startup_1": "I had the privilege of initially working in a",
+        "startup_2": "startup",
+        "startup_3": "where I took my first steps in the technology area and got to know the job market.",
+        "company_1": "Soon after, I worked at a",
+        "company_2": "financial management and reconciliation company",
+        "company_3": "where I had the opportunity to improve my softskills and hardskills.",
+        "focus": "Currently my main focus is studying to develop more accessible and inclusive products."
+    },
+    "experience": {
+        "experience": "Experience",
+        "developer_equals": "Front-end Developer | Equals - Gestão Financeira Inteligente",
+        "description_equals": "Responsible for the maintenance and technology migration of a web platform for reconciling sales with credit, debit cards, bank slips and other online payment methods, with the aim of providing practical and intuitive access to the user.",
+        "developer_weetravel": "Front-end Developer | WeeTravel",
+        "description_weetravel": "Responsible for creating and maintaining a web platform for travel agencies, with the aim of offering better internal control management for agencies and automating agents' daily lives."
+    },
+    "contact": {
+        "contact_me": "Contact me",
+        "doubt": "If you have any questions or just want to say hi, I'll do my best to get in touch!"
+    },
+    "footer": {
+        "design": "Design by Karine Brito"
+    },
+    "portugues": "Portuguese",
+    "english": "English"
 }
+
