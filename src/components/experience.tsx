@@ -94,7 +94,7 @@ const Experience = () => {
                 </li>
                 <li className='mr-2 mt-2'>
                   <div className='flex items-center rounded-full bg-cyan-900 px-3 py-1 text-xs text-white'>
-                    Style-components
+                    Styled-components
                   </div>
                 </li>
                 <li className='mr-2 mt-2'>
