@@ -35,12 +35,14 @@ const Nav = () => {
     <>
       <div className='font-roboto text-white'>
         <div className='flex items-center justify-between p-10 lg:flex-row'>
-          <div>
-            <BsCodeSlash size={26} className='text-white'/>
-          </div>
-          <div>
-            <button onClick={() => changeLanguage('pt')} className='mr-8'>{t('portugues')}</button>
-            <button onClick={() => changeLanguage('en')}>{t('english')}</button>
+          <div className='flex items-center'>
+            <div>
+              <BsCodeSlash size={26} className='text-white'/>
+            </div>
+            <div className='ml-8'>
+              <button onClick={() => changeLanguage('pt')} className='mr-8'>{t('portugues')}</button>
+              <button onClick={() => changeLanguage('en')}>{t('english')}</button>
+            </div>
           </div>
           <div className='space-x-4 text-3x1'>
             <div className='xs:hidden md:hidden lg:block space-x-2'>
