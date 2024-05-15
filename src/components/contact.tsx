@@ -11,7 +11,7 @@ const Contact = () => {
   }
 
   return (
-    <section id='contact-section' className='flex flex-col justify-center items-center p-10 lg:p-10 lg:min-h-screen'>
+    <section id='contact-section' className='flex flex-col justify-center items-center p-10 lg:min-h-screen'>
         <h2 className='text-6xl md:text-4xl xs:text-xl text-white mb-4 mx-4 xs:mt-20' >{t('contact.contact_me')}</h2>
         <div className='xs:mt-8'>
             <p className='text-slate-300'>
