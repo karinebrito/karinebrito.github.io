@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
         <div>
             <button onClick={openEmail} className='mt-4 p-4 text-white border-2 rounded-md transition-transform transform hover:scale-110'>
-                Diga Oi!
+                {t('contact.say_hello')}
             </button>
             <div className='mt-20'>
                 <Footer />

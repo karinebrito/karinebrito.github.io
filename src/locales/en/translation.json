@@ -28,7 +28,8 @@
     },
     "contact": {
         "contact_me": "Contact me!",
-        "doubt": "If you have any questions or just want to say hi, I'll do my best to get in touch!"
+        "doubt": "If you have any questions or just want to say hi, I'll do my best to get in touch!",
+        "say_hello": "Say Hello!"
     },
     "footer": {
         "design": "Design by Karine Brito"

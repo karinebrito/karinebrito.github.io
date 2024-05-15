@@ -28,7 +28,8 @@
     },
     "contact": {
         "contact_me": "Entre em contato comigo!",
-        "doubt": "Caso tenha alguma dúvida ou apenas queira dizer oi, farei o possível para entrar em contato com você!"
+        "doubt": "Caso tenha alguma dúvida ou apenas queira dizer oi, farei o possível para entrar em contato com você!",
+        "say_hello": "Diga Oi!"
     },
     "footer": {
         "design": "Design feito por Karine Brito"
