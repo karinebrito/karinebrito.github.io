@@ -64,10 +64,10 @@ const Nav = () => {
             </div>
           </div>
           <div className='space-x-4 text-3x1'>
-            <div className='xs:hidden md:hidden lg:block space-x-2'>
-              <a href='#' onClick={(e) => scrollToSection('about-section', e)} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.about')}</a>
-              <a href='#' onClick={(e) => scrollToSection('experience-section', e)} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.experience')}</a>
-              <a href='#' onClick={(e) => scrollToSection('contact-section', e)} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.contact')}</a>
+            <div className='xs:hidden md:hidden lg:block'>
+              <a href='#' onClick={(e) => scrollToSection('about-section', e)} className='hover:text-cyan-500 p-4 text-x1 cursor-pointer'>{t('nav.about')}</a>
+              <a href='#' onClick={(e) => scrollToSection('experience-section', e)} className='hover:text-cyan-500 p-4 text-x1 cursor-pointer'>{t('nav.experience')}</a>
+              <a href='#' onClick={(e) => scrollToSection('contact-section', e)} className='hover:text-cyan-500 px-3 p-4 text-x1 cursor-pointer'>{t('nav.contact')}</a>
               <a onClick={openResumePdf} className='hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer'>{t('nav.resume')}</a>
             </div>
             <div className='xs:block md:block lg:hidden'>

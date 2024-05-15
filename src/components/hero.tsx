@@ -7,16 +7,16 @@ const Hero = () => {
 
   return (
     <>
-      <section className='flex justify-center items-start p-10 lg:p-20 lg:pl-64 lg:min-h-screen'>
+      <section className='flex justify-center items-center p-10 lg:p-20 lg:px-32 lg:min-h-screen'>
         <div className='md:w-full xs:w-full'>
             <div>
               <h1 className='text-3xl md:text-2xl xs:text-xl text-cyan-500'>{t('hero.hi_my_name')}</h1>
             </div>
             <div>
-              <h2 className='mt-10 text-8xl md:text-6xl xs:text-4xl text-white'>{t('hero.name')}</h2>
+              <h2 className='mt-4 text-8xl md:text-6xl xs:text-4xl text-white'>{t('hero.name')}</h2>
             </div>
             <div>
-              <h3 className='mt-10 text-xl text-slate-300'>
+              <h3 className='mt-4 text-xl xs:text-lg text-slate-300'>
               {t('hero.description_resume')}
               </h3>
             </div>
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section id='about-section' className='p-10 lg:p-20 lg:pl-64 lg:min-h-screen'>
+      <section id='about-section' className='p-10 lg:p-20 lg:px-32 lg:min-h-screen'>
         <div className='border-b border-gray-700 w-5/6 mt-10 mb-8'></div>
         <h1 className='text-4xl xs:text-2xl text-white lg:mr-4 mb-8'>{t('hero.about')}</h1>
         <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-8'>
