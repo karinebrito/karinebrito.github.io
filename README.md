@@ -9,7 +9,7 @@ This is my portfolio, created using React with Vite as the bundler and Tailwind 
 - Run `npm run dev`
 - Access `http://localhost:5173`
 
-<h2>:brazil: Meu portifólio com React + Vite e Tailwind CSS</h2>
+<h2>:brazil: Meu portfólio com React + Vite e Tailwind CSS</h2>
 
 Este é o meu portfólio, criado usando React com Vite como bundler e Tailwind CSS para estilização.
 
