@@ -5,7 +5,7 @@ const Experience = () => {
 
   return (
     <section id='experience-section' className='p-10 lg:p-20 lg:pl-64 lg:min-h-screen'>
-      <div className='border-b border-gray-700 w-5/6 mb-8'></div>
+      <div className='border-b border-gray-700 w-5/6 mt-10 mb-8'></div>
       <h1 className='text-4xl xs:text-2xl text-white'>{t('experience.experience')}</h1>
       <ol className='mt-8 grid lg:w-2/3 md:1/2'>
         <a href='https://equals.com.br/' target='_blank'>
