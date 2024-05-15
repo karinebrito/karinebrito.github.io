@@ -7,8 +7,8 @@ const Hero = () => {
 
   return (
     <>
-      <section className='flex justify-center items-start p-10 lg:p-20 lg:min-h-screen'>
-        <div className='lg:w-1/2 md:w-full xs:w-full'>
+      <section className='flex justify-center items-start p-10 lg:p-20 lg:pl-64 lg:min-h-screen'>
+        <div className='md:w-full xs:w-full'>
             <div>
               <h1 className='text-3xl md:text-2xl xs:text-xl text-cyan-500'>{t('hero.hi_my_name')}</h1>
             </div>
