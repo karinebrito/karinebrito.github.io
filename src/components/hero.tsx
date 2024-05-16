@@ -51,17 +51,25 @@ const Hero = () => {
           <div className="lg:col-span-2 text-slate-400">
             <p>{t('hero.description_complete')}</p>
             <p className="mt-8">
-              {t('hero.startup_1')} 
-              <a href="https://tripmee.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
+              <span>{t('hero.startup_1')}</span>
+              <span> 
+                <a href="https://tripmee.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
                 {t('hero.startup_2')}
-              </a> 
-              {t('hero.startup_3')}
-              {t('hero.company_1')}
-              <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
-                {t('hero.company_2')}
-              </a>
+                </a> 
+              </span>
+              <span>{t('hero.startup_3')}</span>
+              <span>{t('hero.company_1')}</span>
+              <span>
+                <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
+                  {t('hero.company_2')}
+                </a>
+              </span>
+              <span>
               {t('hero.company_3')}
+              </span>
+              <span>
               {t('hero.company_4')}
+              </span>
             </p>
             <p className="mt-8">{t('hero.focus')}</p>
           </div>
