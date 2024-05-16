@@ -33,7 +33,7 @@ const Experience = () => {
               <h3 className="text-white">
                 {t('experience.developer_equals')}
               </h3>
-              <p className="mt-4 text-slate-300">
+              <p className="mt-4 text-slate-400">
                  {t('experience.description_equals')}
               </p>
               <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
@@ -87,7 +87,7 @@ const Experience = () => {
               <h3 className="text-white">
                 {t('experience.developer_weetravel')}
               </h3>
-              <p className="mt-8 text-slate-300">
+              <p className="mt-8 text-slate-400">
                 {t('experience.description_equals')}
               </p>
               <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">

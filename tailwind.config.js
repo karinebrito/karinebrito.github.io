@@ -5,19 +5,29 @@ export default {
     "./*.html", 
     "./src/**/*.{js,ts,jsx,tsx}", 
     "./*.tsx", 
-    ],  theme: {
-    fontFamily: {
-      'sans': ['JetBrains Mono', 'monospace']
+    ],  
+    theme: {
+      fontFamily: {
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
+      extend: {
+        spacing: {
+          '128': '32rem',
+          '144': '36rem',
+        },
+        borderRadius: {
+          '4xl': '2rem',
+        }
+      },
+      screens: {
+        xs: '320px',
+        ssm: '375px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+      },
     },
-    screens: {
-      xs: '320px',
-      ssm: '375px',
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-    },
-    extend: {},
-  },
-  plugins: [],
+    plugins: [],
 }
 

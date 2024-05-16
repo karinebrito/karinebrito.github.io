@@ -24,16 +24,16 @@ const Contact = () => {
     }, [inView])
 
     return (
-        <section id="contact-section" ref={ref} className="bg-gray-900">
-            <div className={`flex flex-col justify-center items-center p-10 lg:px-32 transition-opacity duration-800 ease-in-out ${showContent ? 'opacity-100' : 'opacity-0'}`}>
+        <section id="contact-section" ref={ref} className="bg-slate-900">
+            <div className={`flex flex-col justify-center items-center lg:text-justify p-10 lg:px-32 transition-opacity duration-800 ease-in-out ${showContent ? 'opacity-100' : 'opacity-0'}`}>
                 <h2 className="text-xl text-white xs:mt-20" >{t('contact.contact_me')}</h2>
-                <div className="xs:mt-4">
-                    <p className="text-slate-300">
-                    {t('contact.doubt')}
+                <div className="mt-4 text-slate-400">
+                    <p>
+                        {t('contact.doubt')}
                     </p>
                 </div>
                 <div className="flex flex-col">
-                    <button onClick={openEmail} className="mt-4 p-4 text-white border-2 rounded-md transition-transform transform hover:scale-110">
+                    <button onClick={openEmail} className="mt-4 p-2 text-white border-2 rounded-md transition-transform transform hover:scale-110">
                         {t('contact.say_hello')}
                     </button>
                     <div className="mt-20">

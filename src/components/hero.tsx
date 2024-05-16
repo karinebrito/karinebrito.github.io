@@ -3,6 +3,7 @@ import HeroPic from '../../assets/photokb.jpeg'
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
+import '../../hero.css'
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -22,17 +23,17 @@ const Hero = () => {
       <section className="flex justify-center items-center p-10 lg:p-20 lg:px-32 lg:min-h-screen">
         <div className="md:w-full xs:w-full">
             <div>
-              <h1 className="text-3xl md:text-2xl xs:text-xl text-cyan-500">{t('hero.hi_my_name')}</h1>
+              <h1 className="mt-4 text-5xl xs:text-5xl text-white">{t('hero.name')}</h1>
             </div>
+            <h2 className="mt-4 text-lg xs:text-xl text-white">
+              {t('hero.developer')}
+            </h2>
             <div>
-              <h2 className="mt-4 text-8xl md:text-6xl xs:text-4xl text-white">{t('hero.name')}</h2>
-            </div>
-            <div>
-              <h3 className="mt-4 text-xl xs:text-lg text-slate-300">
-              {t('hero.description_resume')}
+              <h3 className="mt-4 max-w text-slate-400">
+                {t('hero.description_resume')}
               </h3>
             </div>
-            <div className="flex mt-10 space-x-4 text-white cursor-pointer">
+            <div className="flex mt-6 space-x-4 text-white cursor-pointer">
             <a href="https://www.linkedin.com/in/annakarinebrito/" target="_blank" rel="noopener noreferrer">
               <BsLinkedin size={40} className="hover:text-cyan-500 hover:scale-105 transition-transform duration-200 ease-in-out"/>
             </a>
@@ -47,16 +48,22 @@ const Hero = () => {
         <div className="border-b border-gray-700 w-5/6 mt-10 mb-8"></div>
         <h1 className="text-4xl xs:text-2xl text-white lg:mr-4 mb-8">{t('hero.about')}</h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-          <div className="lg:col-span-2 text-slate-300">
+          <div className="lg:col-span-2 text-slate-400">
             <p>{t('hero.description_complete')}</p>
-            {[
-              { label: t('hero.startup_1'), link: 'https://tripmee.com.br/', linkText: t('hero.startup_2') },
-              { label: t('hero.company_1'), link: 'https://equals.com.br/', linkText: t('hero.company_2') },
-            ].map(({ label, link, linkText }, index) => (
-              <p key={index} className="mt-8">
-                {label} <a href={link} target="_blank" rel="noopener noreferrer" className="text-cyan-500 hover:underline">{linkText}</a> {t(`hero.${index === 0 ? 'startup_3' : 'company_3'}`)}
-              </p>
-            ))}
+            <p className="mt-8">
+              {t('hero.startup_1')} 
+              <a href="https://tripmee.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
+                {t('hero.startup_2')}
+              </a> 
+              {t('hero.startup_3')}
+            </p>
+            <p className="mt-8">
+              {t('hero.company_1')}
+              <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
+                {t('hero.company_2')}
+              </a>
+              {t('hero.company_3')}
+            </p>
             <p className="mt-8">{t('hero.focus')}</p>
           </div>
           <div className="lg:col-span-2 md:col-span-1">

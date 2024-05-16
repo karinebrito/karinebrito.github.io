@@ -4,13 +4,12 @@ import { HiMenuAlt1 } from 'react-icons/hi'
 import ResumePdf from '../../assets/resume.pdf'
 import BrazilianFlag from '../../assets/brazil.svg'
 import AmericanFlag from '../../assets/eua.svg'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Nav = () => {
   const { t, i18n } = useTranslation()
   const [toggle, setToggle] = useState(false)
-  const [isNavbarFixed, setIsNavbarFixed] = useState(false)
 
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language)
@@ -41,37 +40,27 @@ const Nav = () => {
     window.open(ResumePdf, "_blank")
   }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsNavbarFixed(window.scrollY > 0)
-    }
-    
-    window.addEventListener('scroll', handleScroll)
-    
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-  
 
   return (
     <>
-      <div className={`font-roboto text-white transition duration-500 ${isNavbarFixed ? "sticky top-0 bg-black z-50" : ""}`}>
-        <div className="flex items-center justify-between px-8 py-4 lg:flex-row">
+      <div className='text-white lg:z-50 border-b border-slate-900/10 dark:border-slate-50/[0.06] bg-slate-950 supports-backdrop-blur:bg-slate/60 sticky top-0 z-50'>
+        <div className="flex items-center justify-between lg:px-32 px-10 py-4 lg:flex-row">
           <div className="flex items-center">
-            <div>
+            <div className='pt-4 pr-4 pb-4'>
               <a href="#" onClick={scrollToTop}>
-                <BsCodeSlash size={26} className="text-white hover:text-cyan-500" aria-label="Initial icon"/>
+                <BsCodeSlash size={20} className="text-white hover:text-cyan-500" aria-label="Initial icon"/>
               </a>
             </div>
-            <div className="ml-10 mt-2">
-              <button onClick={() => changeLanguage('pt')} className="mr-4" aria-label="Change Language to Portuguese">
+            <div className="flex">
+              <button onClick={() => changeLanguage('pt')} className="p-2" aria-label="Change Language to Brazilian Portuguese">
                 <img src={BrazilianFlag} alt="Brazilian Flag" className="transition-transform duration-300 transform hover:scale-110"/>
               </button>
-              <button onClick={() => changeLanguage('en')}>
+              <button onClick={() => changeLanguage('en')} className="p-2" aria-label="Change Language to English">
                 <img src={AmericanFlag} alt="American Flag" className="transition-transform duration-300 transform hover:scale-110" aria-label="Change Language to English"/>
               </button>
             </div>
           </div>
-          <div className="space-x-4 text-3x1">
+          <div className="space-x-4 text-sm">
             <div className="xs:hidden md:hidden lg:block">
               <a href="#about-section" onClick={(e) => scrollToSection("about-section", e)} className="hover:text-cyan-500 p-4 text-x1 cursor-pointer">{t('nav.about')}</a>
               <a href="#experience-section" onClick={(e) => scrollToSection("experience-section", e)} className="hover:text-cyan-500 p-4 text-x1 cursor-pointer">{t('nav.experience')}</a>

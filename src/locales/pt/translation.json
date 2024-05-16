@@ -8,15 +8,16 @@
     "hero": {
         "hi_my_name": "Olá, meu nome é",
         "name": "Karine Brito",
-        "description_resume": "Desenvolvedora Front-end focada na construção de interfaces digitais de alta qualidade.",
+        "developer":"Desenvolvedora Front-end",
+        "description_resume": "Focada na construção de interfaces digitais de alta qualidade.",
         "description_complete": "Olá! Meu nome é Karine, sou formada em Análise e Desenvolvimento de Sistemas e gosto de desenvolver o design de interfaces. O meu interesse pelo desenvolvimento de software começou em 2020, quando decidi compreender o funcionamento por trás dos sites. Devido a isso, descobri que posso tornar mais intuitiva a experiência de outras pessoas.",
         "about": "Sobre mim",
         "startup_1": "Tive o privilégio de trabalhar inicialmente em uma",
-        "startup_2": " startup",
+        "startup_2": "startup",
         "startup_3": "onde dei meus primeiros passos na área de tecnologia e pude conhecer o mercado de trabalho.",
         "company_1": "Logo depois, trabalhei em uma",
-        "company_2": "empresa de gestão e conciliação financeira",
-        "company_3": "onde tive a oportunidade de melhorar as minhas softskills e hardskills.",
+        "company_2": "empresa",
+        "company_3": "de gestão e conciliação financeira, onde tive a oportunidade de melhorar as minhas softskills e hardskills.",
         "focus": "Atualmente o meu foco principal é estudar para desenvolver produtos mais acessíveis e inclusivos."
     },
     "experience": {
@@ -28,13 +29,11 @@
     },
     "contact": {
         "contact_me": "Entre em contato comigo",
-        "doubt": "Caso tenha alguma dúvida ou apenas queira dizer oi, estou à disposição!",
+        "doubt": "Caso tenha alguma dúvida ou só quiser dar um oi, retornarei o mais breve possível!",
         "say_hello": "Diga Oi"
     },
     "footer": {
         "design": "Design feito por Karine Brito"
-    },
-    "portugues": "Português",
-    "english": "Inglês"
+    }
 }   
 

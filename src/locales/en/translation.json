@@ -8,14 +8,15 @@
     "hero": {
         "hi_my_name": "Hi, my name is",
         "name": "Karine Brito",
-        "description_resume": "Front-end Developer focused on building high-quality digital interfaces.",
+        "developer":"Front-end Developer",
+        "description_resume": "Focused on building high-quality digital interfaces.",
         "description_complete": "Hello! My name is Karine, I have a degree in Systems Analysis and Development and I like developing interface design. My interest in software development began in 2020, when I decided to understand the workings behind websites. Because of this, I've found that I can make other people's experience more intuitive.",
         "about": "About me",
         "startup_1": "I had the privilege of initially working in a",
         "startup_2": "startup",
         "startup_3": "where I took my first steps in the technology area and got to know the job market.",
-        "company_1": "Soon after, I worked at a",
-        "company_2": "financial management and reconciliation company",
+        "company_1": "Soon after, I worked at a financial management and reconciliation",
+        "company_2": "company", 
         "company_3": "where I had the opportunity to improve my softskills and hardskills.",
         "focus": "Currently my main focus is studying to develop more accessible and inclusive products."
     },
@@ -28,13 +29,11 @@
     },
     "contact": {
         "contact_me": "Contact me",
-        "doubt": "If you have any questions or just want to say hello, I'm happy to help!",
+        "doubt": "If you have any questions or just want to say hello, I'll get back to you as soon as possible!",
         "say_hello": "Say Hello"
     },
     "footer": {
         "design": "Design by Karine Brito"
-    },
-    "portugues": "Portuguese",
-    "english": "English"
+    }
 }
 

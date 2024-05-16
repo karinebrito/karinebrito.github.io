@@ -7,7 +7,7 @@ import './src/i18n.tsx'
 function App() {
   return (
     <>
-      <div className='bg-black'>
+      <div className='bg-slate-950'>
         <Nav />
         <Hero />
         <Experience />
