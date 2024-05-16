@@ -61,8 +61,6 @@ const Hero = () => {
                 {t('hero.company_2')}
               </a>
               {t('hero.company_3')}
-            </p>
-            <p className="mt-8">
               {t('hero.company_4')}
             </p>
             <p className="mt-8">{t('hero.focus')}</p>
