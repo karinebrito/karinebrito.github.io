@@ -27,9 +27,9 @@
         "description_weetravel": "Responsável pela criação e a manutenção de uma plataforma web de agências de viagens, com o intuito de oferecer uma melhor gestão de controle interno para as agências e automatizar o dia a dia dos agentes."
     },
     "contact": {
-        "contact_me": "Entre em contato comigo!",
-        "doubt": "Caso tenha alguma dúvida ou apenas queira dizer oi, farei o possível para entrar em contato com você!",
-        "say_hello": "Diga Oi!"
+        "contact_me": "Entre em contato comigo",
+        "doubt": "Caso tenha alguma dúvida ou apenas queira dizer oi, estou à disposição!",
+        "say_hello": "Diga Oi"
     },
     "footer": {
         "design": "Design feito por Karine Brito"
