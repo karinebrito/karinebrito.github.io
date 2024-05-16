@@ -18,7 +18,7 @@ const Experience = () => {
   }, [inView])
 
   return (
-    <section id="experience-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 flex flex-col justify-center lg:max-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
+    <section id="experience-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 flex flex-col justify-center lg:min-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
       <div className="border-b border-gray-700 w-5/6 mt-10 mb-8"></div>
       <h1 className="text-4xl xs:text-2xl text-white">{t('experience.experience')}</h1>
       <ol className="mt-8 grid lg:w-2/3 md:1/2">

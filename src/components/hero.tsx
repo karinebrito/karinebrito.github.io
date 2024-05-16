@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section id="about-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 flex flex-col justify-center lg:max-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
+      <section id="about-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 flex flex-col justify-center lg:min-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
         <div className="border-b border-gray-700 w-5/6 mt-10 mb-8"></div>
         <h1 className="text-4xl xs:text-2xl text-white lg:mr-4 mb-8">{t('hero.about')}</h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
@@ -56,20 +56,21 @@ const Hero = () => {
                 {t('hero.startup_2')}
               </a> 
               {t('hero.startup_3')}
-            </p>
-            <p className="mt-8">
               {t('hero.company_1')}
               <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
                 {t('hero.company_2')}
               </a>
               {t('hero.company_3')}
             </p>
+            <p className="mt-8">
+              {t('hero.company_4')}
+            </p>
             <p className="mt-8">{t('hero.focus')}</p>
           </div>
           <div className="lg:col-span-2 md:col-span-1">
             <div className="relative">
-              <div className={`absolute inset-0 bg-cyan-900 opacity-75 lg:w-1/2 md:w-2/4 xs:mx-auto lg:m-0 rounded-md ${"hover:hidden"}`}></div>
-              <img src={HeroPic} alt="Karine Photo" className="lg:w-1/2 md:w-2/4 xs:w-fit xs:mx-auto lg:m-0 hover:scale-105 transition-transform duration-200 ease-in-out rounded-md"/>
+              <div className={`absolute inset-0 bg-cyan-900 opacity-75 lg:w-2/4 md:w-2/4 xs:mx-auto lg:m-0 rounded-full ${"hover:hidden"}`}></div>
+              <img src={HeroPic} alt="Karine Photo" className="w-full h-full object-cover lg:w-2/4 md:w-2/4 xs:w-fit xs:mx-auto lg:m-0 hover:scale-105 transition-transform duration-200 ease-in-out rounded-full" style={{ aspectRatio: '1 / 1' }} />
             </div>
           </div>
         </div>

@@ -12,13 +12,14 @@
         "description_resume": "Focused on building high-quality digital interfaces.",
         "description_complete": "Hello! My name is Karine, I have a degree in Systems Analysis and Development and I like developing interface design. My interest in software development began in 2020, when I decided to understand the workings behind websites. Because of this, I've found that I can make other people's experience more intuitive.",
         "about": "About me",
-        "startup_1": "I had the privilege of initially working in a",
+        "startup_1": "I started my professional career at Weetravel, a",
         "startup_2": "startup",
-        "startup_3": "where I took my first steps in the technology area and got to know the job market.",
-        "company_1": "Soon after, I worked at a financial management and reconciliation",
+        "startup_3": "in the tourism sector, where I had the opportunity to develop web systems using technologies such as React and TypeScript.",
+        "company_1": " Slater, I joined the Front-end team at Equals, a",
         "company_2": "company", 
-        "company_3": "where I had the opportunity to improve my softskills and hardskills.",
-        "focus": "Currently my main focus is studying to develop more accessible and inclusive products."
+        "company_3": "of the Stone.Co group, which specializes in financial management and reconciliation. There, I honed my technical and interpersonal skills, working with various technologies such as React, React Native and Java Server Pages.",
+        "company_4": "Collaborating in a multidisciplinary and agile environment allowed me to develop not only my technical skills, but also my teamwork skills and knowledge of the financial market.",
+        "focus": "I'm currently focused on studying and developing more accessible and inclusive products. I firmly believe in the power of technology to transform lives and am committed to contributing to a fairer and more empathetic digital world."
     },
     "experience": {
         "experience": "Professional experience",
@@ -29,7 +30,7 @@
     },
     "contact": {
         "contact_me": "Contact me",
-        "doubt": "If you have any questions or just want to say hello, I'll get back to you as soon as possible!",
+        "doubt": "IIf you have any questions or just want to say hi, I will respond as soon as possible!",
         "say_hello": "Say Hello"
     },
     "footer": {
