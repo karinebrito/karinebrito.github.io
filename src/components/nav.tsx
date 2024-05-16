@@ -1,7 +1,7 @@
 import { BsCodeSlash } from 'react-icons/bs'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiMenuAlt1 } from 'react-icons/hi'
-import ResumePdf from '../../assets/resume.pdf'
+import CurriculumPdf from '../../assets/resume.pdf'
 import BrazilianFlag from '../../assets/brazil.svg'
 import AmericanFlag from '../../assets/eua.svg'
 import { useState } from 'react'
@@ -36,8 +36,8 @@ const Nav = () => {
     }
   }
 
-  const openResumePdf = () => {
-    window.open(ResumePdf, "_blank")
+  const openCurriculumPdf = () => {
+    window.open(CurriculumPdf, "_blank")
   }
 
 
@@ -65,7 +65,7 @@ const Nav = () => {
               <a href="#about-section" onClick={(e) => scrollToSection("about-section", e)} className="hover:text-cyan-500 p-4 text-x1 cursor-pointer">{t('nav.about')}</a>
               <a href="#experience-section" onClick={(e) => scrollToSection("experience-section", e)} className="hover:text-cyan-500 p-4 text-x1 cursor-pointer">{t('nav.experience')}</a>
               <a href="#contact-section" onClick={(e) => scrollToSection("contact-section", e)} className="hover:text-cyan-500 px-3 p-4 text-x1 cursor-pointer">{t('nav.contact')}</a>
-              <a onClick={openResumePdf} className="hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer">{t('nav.resume')}</a>
+              <a onClick={openCurriculumPdf} className="hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer">{t('nav.curriculum')}</a>
             </div>
             <div className="xs:block md:block lg:hidden">
               {toggle ? (
@@ -89,8 +89,8 @@ const Nav = () => {
               <a href="#contact-section" onClick={(e) => scrollToSection('contact-section', e)}>
                 <li className="hover:text-cyan-500 text-white text-x1 mr-4">{t('nav.contact')}</li>
               </a>
-              <a onClick={openResumePdf}>
-                <li className="hover:text-cyan-500 text-white text-x1 mr-8">{t('nav.resume')}</li>
+              <a onClick={openCurriculumPdf}>
+                <li className="hover:text-cyan-500 text-white text-x1 mr-8">{t('nav.curriculum')}</li>
               </a>
               </ul>
             </div>

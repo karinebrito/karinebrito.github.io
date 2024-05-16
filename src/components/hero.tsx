@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section id="about-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 lg:min-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
+      <section id="about-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 flex flex-col justify-center lg:max-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
         <div className="border-b border-gray-700 w-5/6 mt-10 mb-8"></div>
         <h1 className="text-4xl xs:text-2xl text-white lg:mr-4 mb-8">{t('hero.about')}</h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">

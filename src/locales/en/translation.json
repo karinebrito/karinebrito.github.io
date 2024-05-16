@@ -3,7 +3,7 @@
         "about": "About",
         "experience": "Experience",
         "contact": "Contact",
-        "resume": "Resume"
+        "curriculum": "Curriculum"
     },
     "hero": {
         "hi_my_name": "Hi, my name is",
@@ -21,7 +21,7 @@
         "focus": "Currently my main focus is studying to develop more accessible and inclusive products."
     },
     "experience": {
-        "experience": "Experience",
+        "experience": "Professional experience",
         "developer_equals": "Front-end Developer | Equals - Gestão Financeira Inteligente",
         "description_equals": "Responsible for the maintenance and technology migration of a web platform for reconciling sales with credit, debit cards, bank slips and other online payment methods, with the aim of providing practical and intuitive access to the user.",
         "developer_weetravel": "Front-end Developer | WeeTravel",
