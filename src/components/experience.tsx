@@ -22,7 +22,7 @@ const Experience = () => {
       <div className="border-b border-gray-700 w-5/6 mt-10 mb-8"></div>
       <h1 className="text-4xl xs:text-2xl text-white">{t('experience.experience')}</h1>
       <ol className="mt-8 grid lg:w-2/3 md:1/2">
-        <a href="https://equals.com.br/" target="_blank">
+        <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer">
           <li className="rounded-md hover:bg-gray-900 transition-colors w-full p-4 flex flex-col md:flex-row">
             <div className="flex-none lg:pr-6 md:pr-6">
               <header className="mt-1 xs:mb-4 text-xs font-semibold text-cyan-500">
@@ -76,7 +76,7 @@ const Experience = () => {
             </div>
           </li>
         </a>
-        <a href="https://tripmee.com.br/" target="_blank">
+        <a href="https://tripmee.com.br/" target="_blank" rel="noopener noreferrer">
           <li className="mt-4 rounded-md hover:bg-gray-900 transition-colors w-full p-4 flex flex-col md:flex-row">
             <div className="flex-none md:pr-6">
                 <header className="mt-1 xs:mb-4 text-xs font-semibold text-cyan-500">

@@ -59,15 +59,15 @@ const Nav = () => {
           <div className="flex items-center">
             <div>
               <a href="#" onClick={scrollToTop}>
-                <BsCodeSlash size={26} className="text-white hover:text-cyan-500"/>
+                <BsCodeSlash size={26} className="text-white hover:text-cyan-500" aria-label="Initial icon"/>
               </a>
             </div>
             <div className="ml-10 mt-2">
-              <button onClick={() => changeLanguage('pt')} className="mr-4">
+              <button onClick={() => changeLanguage('pt')} className="mr-4" aria-label="Change Language to Portuguese">
                 <img src={BrazilianFlag} alt="Brazilian Flag" className="transition-transform duration-300 transform hover:scale-110"/>
               </button>
               <button onClick={() => changeLanguage('en')}>
-                <img src={AmericanFlag} alt="American Flag" className="transition-transform duration-300 transform hover:scale-110"/>
+                <img src={AmericanFlag} alt="American Flag" className="transition-transform duration-300 transform hover:scale-110" aria-label="Change Language to English"/>
               </button>
             </div>
           </div>
@@ -80,9 +80,9 @@ const Nav = () => {
             </div>
             <div className="xs:block md:block lg:hidden">
               {toggle ? (
-                <AiOutlineClose onClick={() => toggleMenu(false)} size={26} className="text-cyan-500 cursor-pointer"/>
+                <AiOutlineClose onClick={() => toggleMenu(false)} size={26} className="text-cyan-500 cursor-pointer" aria-label="Close Menu"/>
               ) : (
-                <HiMenuAlt1 onClick={() => toggleMenu(true)} size={26} className="text-cyan-500"/>
+                <HiMenuAlt1 onClick={() => toggleMenu(true)} size={26} className="text-cyan-500" aria-label="Open Menu"/>
               )}
             </div>
           </div>
