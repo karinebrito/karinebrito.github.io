@@ -19,8 +19,8 @@ const Experience = () => {
 
   return (
     <section id="experience-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 flex flex-col justify-center lg:min-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
-      <div className="border-b border-gray-700 w-5/6 mt-10 mb-8"></div>
-      <h1 className="text-4xl xs:text-2xl text-white">{t('experience.experience')}</h1>
+      <div className="border-b border-gray-700 w-5/6 mt-10 xs:mt-12 mb-8"></div>
+      <h1 className="text-4xl xs:text-xl text-white">{t('experience.experience')}</h1>
       <ol className="mt-8 grid lg:w-2/3 md:1/2">
         <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer">
           <li className="rounded-md hover:bg-gray-900 transition-colors w-full p-4 flex flex-col md:flex-row">

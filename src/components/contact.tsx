@@ -26,14 +26,14 @@ const Contact = () => {
     return (
         <section id="contact-section" ref={ref} className="bg-slate-900">
             <div className={`flex flex-col justify-center items-center lg:text-justify p-10 lg:px-32 transition-opacity duration-800 ease-in-out ${showContent ? 'opacity-100' : 'opacity-0'}`}>
-                <h2 className="text-xl text-white xs:mt-20" >{t('contact.contact_me')}</h2>
+                <h2 className="text-xl text-white xs:mt-40" >{t('contact.contact_me')}</h2>
                 <div className="mt-4 text-slate-400">
                     <p>
                         {t('contact.doubt')}
                     </p>
                 </div>
                 <div className="flex flex-col">
-                    <button onClick={openEmail} className="mt-4 p-2 text-white rounded border-2 transition-transform transform hover:scale-110">
+                    <button onClick={openEmail} className="mt-4 p-2 text-sm text-white rounded border-2 transition-transform transform hover:scale-110">
                         {t('contact.say_hello')}
                     </button>
                     <div className="mt-20">

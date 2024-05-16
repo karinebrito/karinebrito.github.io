@@ -23,13 +23,13 @@ const Hero = () => {
       <section className="flex justify-center items-center p-10 lg:p-20 lg:px-32 lg:min-h-screen">
         <div className="md:w-full xs:w-full">
             <div>
-              <h1 className="mt-4 text-5xl xs:text-5xl text-white">{t('hero.name')}</h1>
+              <h1 className="mt-4 text-lg xs:text-4xl text-white">{t('hero.name')}</h1>
             </div>
             <h2 className="mt-4 text-lg xs:text-xl text-white">
               {t('hero.developer')}
             </h2>
             <div>
-              <h3 className="mt-4 max-w text-slate-400">
+              <h3 className="mt-4 text-sm max-w text-slate-400">
                 {t('hero.description_resume')}
               </h3>
             </div>
@@ -45,8 +45,8 @@ const Hero = () => {
       </section>
 
       <section id="about-section" ref={ref} className={`p-10 lg:p-20 lg:px-32 flex flex-col justify-center lg:min-h-screen transition-opacity duration-800 ease-in-out ${showContent ? "opacity-100" : "opacity-0"}`}>
-        <div className="border-b border-gray-700 w-5/6 mt-10 mb-8"></div>
-        <h1 className="text-4xl xs:text-2xl text-white lg:mr-4 mb-8">{t('hero.about')}</h1>
+        <div className="border-b border-gray-700 w-5/6 mt-10 xs:mt-12 mb-8"></div>
+        <h1 className="text-4xl xs:text-xl text-white lg:mr-4 mb-8">{t('hero.about')}</h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           <div className="lg:col-span-2 text-slate-400">
             <p>{t('hero.description_complete')}</p>
