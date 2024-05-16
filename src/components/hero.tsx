@@ -33,12 +33,12 @@ const Hero = () => {
                 {t('hero.description_resume')}
               </h3>
             </div>
-            <div className="flex mt-6 space-x-4 text-white cursor-pointer">
+            <div className="flex mt-6 space-x-4 text-white">
             <a href="https://www.linkedin.com/in/annakarinebrito/" target="_blank" rel="noopener noreferrer">
-              <BsLinkedin size={40} className="hover:text-cyan-500 hover:scale-105 transition-transform duration-200 ease-in-out"/>
+              <BsLinkedin size={40} className="hover:text-cyan-500 hover:scale-105 transition-transform duration-200 ease-in-out cursor-pointer"/>
             </a>
             <a href="https://github.com/karinebrito" target="_blank" rel="noopener noreferrer">
-              <BsGithub size={40} className="hover:text-cyan-500 hover:scale-105 transition-transform duration-200 ease-in-out"/>
+              <BsGithub size={40} className="hover:text-cyan-500 hover:scale-105 transition-transform duration-200 ease-in-out cursor-pointer"/>
             </a>
             </div>        
         </div>
