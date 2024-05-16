@@ -33,7 +33,7 @@ const Contact = () => {
                     </p>
                 </div>
                 <div className="flex flex-col">
-                    <button onClick={openEmail} className="mt-4 p-2 text-white rounded bg-gradient-to-r from-green-600 to-blue-500 hover:from-cyan-500 hover:to-indigo-500 transition-transform transform hover:scale-110">
+                    <button onClick={openEmail} className="mt-4 p-2 text-white rounded border-2 transition-transform transform hover:scale-110">
                         {t('contact.say_hello')}
                     </button>
                     <div className="mt-20">
