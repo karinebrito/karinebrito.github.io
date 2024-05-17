@@ -53,14 +53,14 @@ const Hero = () => {
             <p className="mt-8">
               <span>{t('hero.startup_1')}</span>
               <span> 
-                <a href="https://tripmee.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
+                <a href="https://tripmee.com.br/" target="_blank" rel="noopener noreferrer" className="ml-1 text-cyan-500 relative overflow-hidden hover-line">
                 {t('hero.startup_2')}
                 </a> 
               </span>
               <span>{t('hero.startup_3')}</span>
               <span>{t('hero.company_1')}</span>
               <span>
-                <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer" className="mx-2 text-cyan-500 relative overflow-hidden hover-line">
+                <a href="https://equals.com.br/" target="_blank" rel="noopener noreferrer" className="ml-1 text-cyan-500 relative overflow-hidden hover-line">
                   {t('hero.company_2')}
                 </a>
               </span>
