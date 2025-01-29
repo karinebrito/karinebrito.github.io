@@ -1,57 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
-import { t } from 'i18next'
 
-const experiences = [
-  {
-    company: 'CI&T',
-    url: 'https://ciandt.com/',
-    period: `08/2024 - ${t('experience.period_present')}`,
-    titleKey: 'experience.developer_ci&t',
-    descriptionKey: 'experience.description_ci&t',
-    technologies: [
-      'Javascript',
-      'TypeScript',
-      'React',
-      'React Testing',
-      'Jest',
-      'Design System',
-      'GitLab',
-    ],
-  },
-  {
-    company: 'Equals',
-    url: 'https://equals.com.br/',
-    period: '12/2022 - 04/2024',
-    titleKey: 'experience.developer_equals',
-    descriptionKey: 'experience.description_equals',
-    technologies: [
-      'Javascript',
-      'TypeScript',
-      'React',
-      'React Native',
-      'Design System',
-      'Java Server Pages',
-      'Github',
-    ],
-  },
-  {
-    company: 'WeeTravel',
-    url: 'https://tripmee.com.br/',
-    period: '10/2021 - 12/2022',
-    titleKey: 'experience.developer_weetravel',
-    descriptionKey: 'experience.description_weetravel',
-    technologies: [
-      'Javascript',
-      'TypeScript',
-      'React',
-      'Styled-components',
-      'Bootstrap',
-      'Azure',
-    ],
-  },
-];
 
 const Experience = () => {
   const { t } = useTranslation();
@@ -63,6 +13,56 @@ const Experience = () => {
       setTimeout(() => setShowContent(true), 200)
     }
   }, [inView])
+
+  const experiences = [
+    {
+      company: 'CI&T',
+      url: 'https://ciandt.com/',
+      period: `08/2024 - ${t('experience.period_present')}`,
+      titleKey: 'experience.developer_ci&t',
+      descriptionKey: 'experience.description_ci&t',
+      technologies: [
+        'Javascript',
+        'TypeScript',
+        'React',
+        'React Testing',
+        'Jest',
+        'Design System',
+        'GitLab',
+      ],
+    },
+    {
+      company: 'Equals',
+      url: 'https://equals.com.br/',
+      period: '12/2022 - 04/2024',
+      titleKey: 'experience.developer_equals',
+      descriptionKey: 'experience.description_equals',
+      technologies: [
+        'Javascript',
+        'TypeScript',
+        'React',
+        'React Native',
+        'Design System',
+        'Java Server Pages',
+        'Github',
+      ],
+    },
+    {
+      company: 'WeeTravel',
+      url: 'https://tripmee.com.br/',
+      period: '10/2021 - 12/2022',
+      titleKey: 'experience.developer_weetravel',
+      descriptionKey: 'experience.description_weetravel',
+      technologies: [
+        'Javascript',
+        'TypeScript',
+        'React',
+        'Styled-components',
+        'Bootstrap',
+        'Azure',
+      ],
+    },
+  ]
 
   return (
     <section
