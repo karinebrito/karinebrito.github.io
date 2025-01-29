@@ -12,21 +12,26 @@
         "description_resume": "I develop high quality interactive interfaces",
         "description_complete": "Hi, I'm Karine, a Front-end Developer and a degree in Systems Analysis and Development. My main goal is to create intuitive and accessible user-centered interfaces. My interest in software development began in 2020, when I decided to understand the workings behind websites. Because of this, I discovered that I can make other people's experience better.",
         "about": "About me",
-        "startup_1": "I started my professional career at",
-        "startup_2": "WeeTravel",
-        "startup_3": ", a startup in the tourism sector, where I had the opportunity to develop web systems using technologies such as React and TypeScript.",
-        "company_1": " Slater, I joined the team at",
-        "company_2": "Equals",
-        "company_3": ", a company of the Stone.Co group, specialized in financial management and reconciliation. There, I honed my technical and interpersonal skills, working with various technologies such as React, React Native and Java Server Pages.",
-        "company_4": " Collaborating in a multidisciplinary and agile environment allowed me to develop not only my technical skills, but also my teamwork skills and knowledge of the financial market.",
-        "focus": "I'm currently focused on studying and developing more accessible and inclusive products. I firmly believe in the power of technology to transform lives and am committed to contributing to a fairer and more empathetic digital world."
+        "ci&t_1": " Currently, I am working at  ",
+        "ci&t_2": "CI&T", 
+        "ci&t_3": ", global digital transformation company, where I continue to enhance my front-end development skills using technologies such as React, TypeScript, Jest, and Design System and I have the opportunity to collaborate on challenging and innovative projects, working in a multidisciplinary team and applying agile methodologies to deliver high-quality solutions that meet both user and business needs.",
+        "equals_1": " Slater, I joined the team at",
+        "equals_2": "Equals",
+        "equals_3": ", a company of the Stone.Co group, specialized in financial management and reconciliation. There, I honed my technical and interpersonal skills, working with various technologies such as React, React Native and Java Server Pages.", 
+        "weetravel_1": "I started my professional career at",
+        "weetravel_2": "WeeTravel",
+        "weetravel_3": ", a startup in the tourism sector, where I had the opportunity to develop web systems using technologies such as React and TypeScript.",
+        "focus": "I am focused on studying and developing more accessible and inclusive products. I firmly believe in the power of technology to transform lives and am committed to contributing to a fairer and more empathetic digital world."
     },
     "experience": {
         "experience": "Professional experience",
+        "developer_ci&t": "Front-end Developer | CI&T",
+        "description_ci&t": "Responsible for developing a new platform for an insurance broker, with the aim of optimizing the experience of brokers.",
         "developer_equals": "Front-end Developer | Equals - Gestão Financeira Inteligente",
         "description_equals": "Responsible for the maintenance and technology migration of a web platform for reconciling sales with credit, debit cards, bank slips and other online payment methods, with the aim of providing practical and intuitive access to the user.",
         "developer_weetravel": "Front-end Developer | WeeTravel",
-        "description_weetravel": "Responsible for creating and maintaining a web platform for travel agencies, with the aim of offering better internal control management for agencies and automating agents' daily lives."
+        "description_weetravel": "Responsible for creating and maintaining a web platform for travel agencies, with the aim of offering better internal control management for agencies and automating agents' daily lives.",
+        "period_present": "currently"
     },
     "contact": {
         "contact_me": "Contact me",

@@ -1,7 +1,7 @@
-import Nav from './src/components/nav.tsx'
-import Hero from './src/components/hero.tsx'
-import Experience from './src/components/experience.tsx'
-import Contact from './src/components/contact.tsx'
+import Nav from './src/components/Nav.tsx'
+import Hero from './src/components/Hero.tsx'
+import Experience from './src/components/Experience.tsx'
+import Contact from './src/components/Contact.tsx'
 import './src/i18n.tsx'
 
 function App() {
