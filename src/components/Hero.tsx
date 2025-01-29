@@ -69,14 +69,14 @@ const Hero = () => {
               {t('hero.equals_3')}
               </span>
 
-              <span>{t('hero.ciandt_1')}</span>
+              <span>{t('hero.ci&t_1')}</span>
               <span>
                 <a href="https://ciandt.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-cyan-500 relative overflow-hidden hover-line">
-                  {t('hero.ciandt_2')}
+                  {t('hero.ci&t_2')}
                 </a>
               </span>
               <span>
-              {t('hero.ciandt_3')}
+              {t('hero.ci&t_3')}
               </span>
             </p>
             <p className="mt-8">{t('hero.focus')}</p>
