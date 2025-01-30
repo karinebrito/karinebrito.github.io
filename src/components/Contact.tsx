@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <section id="contact-section" 
       ref={ref} 
-      className="bg-rose-950"
+      className="bg-slate-900"
     >
       <div
         className={`flex flex-col justify-center items-center text-center lg:text-justify p-10 lg:px-32 transition-opacity duration-800 ease-in-out ${

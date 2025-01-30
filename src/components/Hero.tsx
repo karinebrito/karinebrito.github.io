@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { BsGithub, BsLinkedin, BsFillEnvelopeAtFill} from 'react-icons/bs'
 import HeroPic from '../../assets/photokb.jpeg'
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from 'react'
@@ -32,6 +32,10 @@ const Hero = () => {
     }
   }, [aboutInView])
 
+  const openEmail = () => {
+    window.location.href = 'mailto:annakarinebrito@gmail.com'
+  }
+
   return (
     <>
       <section
@@ -42,9 +46,9 @@ const Hero = () => {
       >
       <div className="md:w-full xs:w-full">
           <div>
-            <h1 className="mt-4 text-lg xs:text-4xl text-white">{t('hero.name')}</h1>
+            <h1 className="mt-4 text-lg md:text-2xl lg:text-4xl text-white">{t('hero.name')}</h1>
           </div>
-          <h2 className="mt-4 text-lg xs:text-xl text-white">
+          <h2 className="mt-4 text-lg md:text-2xl lg:text-4x text-white">
           {t('hero.developer')}
           </h2>
           <div>
@@ -58,6 +62,14 @@ const Hero = () => {
           </a>
           <a href="https://github.com/karinebrito" target="_blank" rel="noopener noreferrer">
             <BsGithub size={40} className="hover:text-cyan-500 hover:scale-125 transition-transform duration-200 ease-in-out cursor-pointer"/>
+          </a>
+          
+          <a href="https://github.com/karinebrito" target="_blank" rel="noopener noreferrer">
+            <BsFillEnvelopeAtFill
+              size={40} 
+              onClick={openEmail} 
+              className="hover:text-cyan-500 hover:scale-125 transition-transform duration-200 ease-in-out cursor-pointer"
+            />
           </a>
           </div>        
       </div>

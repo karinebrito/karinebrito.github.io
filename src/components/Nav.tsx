@@ -55,7 +55,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className='text-white lg:z-50 border-b border-slate-900/10 dark:border-slate-50/[0.06] bg-slate-950 supports-backdrop-blur:bg-slate/60 sticky top-0 z-50'>
+      <div className='text-white lg:z-50 border-b border-slate-700 bg-slate-950 supports-backdrop-blur:bg-slate/60 sticky top-0 z-50'>
         <div className="flex items-center justify-between lg:px-32 px-10 py-4 lg:flex-row">
           <div className="flex items-center">
             <div className='pt-4 pr-4 pb-4'>
