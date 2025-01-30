@@ -6,22 +6,21 @@
       "curriculum": "Currículo"
     },
     "hero": {
-      "hi_my_name": "Olá, meu nome é",
-      "name": "Karine Brito",
+      "name": "Olá, eu sou a Karine Brito",
       "developer": "Desenvolvedora Front-end",
-      "description_resume": "Desenvolvo interfaces interativas de alta qualidade",
-      "description_complete": "Olá! Sou a Karine, Desenvolvedora Front-end e formada em Análise e Desenvolvimento de Sistemas. Meu principal objetivo é criar interfaces intuitivas e acessíveis centradas no usuário. Meu interesse pelo desenvolvimento de software começou em 2020, quando decidi entender o funcionamento dos sites. Desde então, descobri que posso melhorar a experiência das pessoas através da tecnologia.",
+      "description_resume": "Ajudo empresas a criar produtos digitais modernos, combinando tecnologia e inovação",
+      "description_complete": "Desenvolvedora Front-end e formada em Análise e Desenvolvimento de Sistemas. Meu principal objetivo é criar interfaces intuitivas e acessíveis centradas no usuário. Meu interesse pelo desenvolvimento de software começou em 2020, quando decidi entender o funcionamento dos sites. Desde então, descobri que posso melhorar a experiência das pessoas através da tecnologia.",
       "about": "Sobre mim",
-      "ci&t_1": " Atualmente, trabalho na",
+      "ci&t_1": " Atualmente, faço parte da",
       "ci&t_2": "CI&T",
-      "ci&t_3": ", uma empresa global de transformação digital, onde continuo a aprimorar as minhas habilidades em desenvolvimento front-end, utilizando tecnologias como React, TypeScript, Jest e Design System e tenho a chance de colaborar em projetos desafiadores e inovadores, trabalhando em uma equipe multidisciplinar e aplicando metodologias ágeis para entregar soluções de alta qualidade que atendam às necessidades dos usuários e dos negócios.",
+      "ci&t_3": ", uma empresa global de transformação digital, onde continuo a aprimorar as minhas habilidades em desenvolvimento front-end, utilizando tecnologias como React, TypeScript e Jest. Além disso, tenho a chance de colaborar em projetos desafiadores e inovadores, trabalhando em uma equipe multidisciplinar e aplicando metodologias ágeis para entregar soluções de alta qualidade que atendam às necessidades dos usuários e dos negócios.",
       "equals_1": " Posteriormente, integrei a equipe da",
       "equals_2": "Equals",
       "equals_3": ", uma empresa do grupo Stone.Co, especializada em gestão e conciliação financeira. Lá, aprimorei as minhas habilidades técnicas e interpessoais, trabalhando com tecnologias como React, React Native e Java Server Pages.",
       "weetravel_1": "Iniciei minha carreira na",
       "weetravel_2": "Weetravel",
       "weetravel_3": ", uma startup do setor turístico, onde tive a oportunidade de desenvolver sistemas web utilizando React e TypeScript.",
-      "focus": "E estou focada em estudar e desenvolver produtos mais acessíveis e inclusivos. Acredito no poder da tecnologia para transformar vidas e estou comprometida em contribuir para um mundo digital mais justo e empático."
+      "focus": "Ao longo dessa jornada, desenvolvi um olhar cada vez mais atento para a acessibilidade e a inclusão no mundo digital. Acredito no poder da tecnologia para transformar vidas e, por isso, me dedico a criar produtos mais acessíveis e inclusivos, contribuindo para um ambiente digital mais justo e empático."
     },
     "experience": {
       "experience": "Experiência Profissional",
@@ -36,7 +35,7 @@
     "contact": {
       "contact_me": "Entre em contato",
       "doubt": "Se tiver dúvidas ou quiser conversar, responderei o mais breve possível!",
-      "say_hello": "Diga Olá"
+      "say_hello": "Diga Olá!"
     },
     "footer": {
       "design": "Design por Karine Brito"

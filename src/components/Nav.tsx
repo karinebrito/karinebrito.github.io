@@ -1,6 +1,6 @@
 import React, { useState } from 'react' 
 import { useTranslation } from 'react-i18next' 
-import { BsCodeSlash } from 'react-icons/bs' 
+import { BsArrowUpSquare } from 'react-icons/bs' 
 import { AiOutlineClose } from 'react-icons/ai' 
 import { HiMenuAlt1 } from 'react-icons/hi'
 import CurriculumPdf from '../../assets/resume.pdf'
@@ -41,6 +41,17 @@ const Nav = () => {
     window.open(CurriculumPdf, "_blank")
   }
 
+  const MenuItem = ({ sectionId, label }: { sectionId: string; label: string }) => (
+    <a href={`#${sectionId}`} onClick={(e) => scrollToSection(sectionId, e)} className="hover:text-cyan-500 p-4 text-x1 cursor-pointer">
+      {t(label)}
+    </a>
+  )
+
+  const LanguageButton = ({ lang, flag, alt }: { lang: string; flag: string; alt: string }) => (
+    <button onClick={() => changeLanguage(lang)} className="p-2" aria-label={`Change Language to ${alt}`}>
+      <img src={flag} alt={alt} className="transition-transform duration-300 transform hover:scale-110" />
+    </button>
+  )
 
   return (
     <>
@@ -49,23 +60,19 @@ const Nav = () => {
           <div className="flex items-center">
             <div className='pt-4 pr-4 pb-4'>
               <a href="#" onClick={scrollToTop}>
-                <BsCodeSlash size={20} className="text-white hover:text-cyan-500" aria-label="Initial icon"/>
+                <BsArrowUpSquare  size={20} className="text-white hover:text-cyan-500" aria-label="Initial icon"/>
               </a>
             </div>
             <div className="flex">
-              <button onClick={() => changeLanguage('pt')} className="p-2" aria-label="Change Language to Brazilian Portuguese">
-                <img src={BrazilianFlag} alt="Brazilian Flag" className="transition-transform duration-300 transform hover:scale-110"/>
-              </button>
-              <button onClick={() => changeLanguage('en')} className="p-2" aria-label="Change Language to English">
-                <img src={AmericanFlag} alt="American Flag" className="transition-transform duration-300 transform hover:scale-110" aria-label="Change Language to English"/>
-              </button>
+              <LanguageButton lang="pt" flag={BrazilianFlag} alt="Brazilian Portuguese" />
+              <LanguageButton lang="en" flag={AmericanFlag} alt="English" />
             </div>
           </div>
           <div className="space-x-4 text-md">
             <div className="xs:hidden md:hidden lg:block">
-              <a href="#about-section" onClick={(e) => scrollToSection("about-section", e)} className="hover:text-cyan-500 p-4 text-x1 cursor-pointer">{t('nav.about')}</a>
-              <a href="#experience-section" onClick={(e) => scrollToSection("experience-section", e)} className="hover:text-cyan-500 p-4 text-x1 cursor-pointer">{t('nav.experience')}</a>
-              <a href="#contact-section" onClick={(e) => scrollToSection("contact-section", e)} className="hover:text-cyan-500 px-3 p-4 text-x1 cursor-pointer">{t('nav.contact')}</a>
+              <MenuItem sectionId="about-section" label="nav.about" />
+              <MenuItem sectionId="experience-section" label="nav.experience" />
+              <MenuItem sectionId="contact-section" label="nav.contact" />
               <a onClick={openCurriculumPdf} className="hover:text-cyan-500 px-3 py-2 text-x1 cursor-pointer">{t('nav.curriculum')}</a>
             </div>
             <div className="xs:block md:block lg:hidden">
