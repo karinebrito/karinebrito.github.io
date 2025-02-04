@@ -1,6 +1,6 @@
 import React, { useState } from 'react' 
 import { useTranslation } from 'react-i18next' 
-import { BsArrowUpSquare } from 'react-icons/bs' 
+import { BsCodeSlash } from 'react-icons/bs' 
 import { AiOutlineClose } from 'react-icons/ai' 
 import { HiMenuAlt1 } from 'react-icons/hi'
 import CurriculumPdf from '../../assets/resume.pdf'
@@ -60,7 +60,7 @@ const Nav = () => {
           <div className="flex items-center">
             <div className='pt-4 pr-4 pb-4'>
               <a href="#" onClick={scrollToTop}>
-                <BsArrowUpSquare  size={20} className="text-white hover:text-cyan-500" aria-label="Initial icon"/>
+                <BsCodeSlash size={20} className="text-white hover:text-cyan-500" aria-label="Initial icon"/>
               </a>
             </div>
             <div className="flex">
