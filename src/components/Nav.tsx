@@ -1,4 +1,4 @@
-import React, { useState } from 'react' 
+import { useState, useEffect } from 'react' 
 import { useTranslation } from 'react-i18next' 
 import { BsCodeSlash } from 'react-icons/bs' 
 import { AiOutlineClose } from 'react-icons/ai' 
@@ -11,6 +11,14 @@ import AmericanFlag from '../../assets/american-flag.svg'
 const Nav = () => {
   const { t, i18n } = useTranslation()
   const [toggle, setToggle] = useState(false)
+
+  useEffect(() => {
+    const mainContent = document.getElementById('main-content')
+
+    if (mainContent) {
+      mainContent.style.filter = toggle ? 'blur(3px)' : 'none'
+    }
+  }, [toggle])
 
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language)
@@ -35,6 +43,7 @@ const Nav = () => {
       const url = window.location.href.split('#')[0] + '#' + sectionId
       window.history.pushState(null, '', url)
     }
+    toggleMenu(false)
   }
 
   const openCurriculumPdf = () => {

@@ -9,9 +9,11 @@ function App() {
     <>
       <div className='bg-slate-950'>
         <Nav />
-        <Hero />
-        <Experience />
-        <Contact />
+        <div id="main-content">
+          <Hero />
+          <Experience />
+          <Contact />
+        </div>
       </div>
     </>
   )
